@@ -19,3 +19,4 @@ Markdown
 **4. Testing:**  
 - (Paste a screenshot of a successful GET request here)
  ![alt text](images/get_dishes.png)
+
