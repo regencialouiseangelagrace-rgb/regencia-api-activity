@@ -12,6 +12,10 @@ const BASE_URI = process.env.BASE_URI || '/api/v1';
 const apiRoutes = require('./src/routes/apiRoutes');
 app.use(process.env.BASE_URI, apiRoutes);
 
+const chefRoutes = require('./src/routes/chefRoutes');  
+app.use('/api/v1/chefs', chefRoutes); 
+
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
     console.log(`Base URI: http://localhost:${PORT}${BASE_URI}`);

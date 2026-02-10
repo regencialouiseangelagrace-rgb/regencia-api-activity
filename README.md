@@ -20,3 +20,8 @@ Markdown
 - (Paste a screenshot of a successful GET request here)
  ![alt text](images/get_dishes.png)
 
+- Why did I choose to Embed the Review?
+  - I embedded the Review because each review belongs strictly to a specific Dish, and storing it inside the Dish makes it easy to retrieve and manage without needing a separate collection.
+
+- Why did I choose to Reference the Chef?
+  - I referenced the Chef because a Chef can exist independently of the Dish, and multiple dishes can share the same Chef. Using a reference keeps data normalized and avoids duplication.
