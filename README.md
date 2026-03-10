@@ -44,6 +44,4 @@ Markdown
     
     **Answer:** The protect middleware checks the Authorization header for a JWT token when a client requests access to a protected route. If a token is present, the middleware verifies it using the server’s secret key. Once verified, it retrieves the user information from the token and attaches it to the request object as req.user, allowing the request to continue to the route controller. If the token is missing, invalid, or expired, the middleware responds with a 401 Unauthorized error. This ensures that only authenticated and authorized users can access protected resources in our application.
 
-    ## Endpoint Testing Summary 
-    - Tested **Registration endpoint** → 201 Created (user successfully registered) 
-    ![Registration Screenshot](./screenshots/registration.png) - Tested **Login endpoint** → 200 OK (JWT token received) ![Login Screenshot](./screenshots/login.png) - Tested **Protected route with valid token** → 201 Created (resource successfully created) ![Protected Route Success](./screenshots/protected-success.png) - Tested **Protected route without token** → 401 Unauthorized (access blocked) ![Protected Route Unauthorized](./screenshots/protected-fail.png)
+  
